@@ -4,6 +4,11 @@ PRODUCT_PACKAGES := \
     LiveWallpapersPicker \
     librs_jni
 
+#Priv-Apps
+PRODUCT_PACKAGES += \
+    K3 \
+    KAdiutor
+
 # Publish that we support the live wallpaper feature.
 PRODUCT_COPY_FILES := \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml

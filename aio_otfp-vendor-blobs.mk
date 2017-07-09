@@ -6,6 +6,8 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/lenovo/aio_otfp/pro
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/lenovo/aio_otfp/proprietary/lib64,system/lib64)
 
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/lenovo/aio_otfp/proprietary/priv-app,system/priv-app)
+
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/lenovo/aio_otfp/proprietary/usr,system/usr)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/lenovo/aio_otfp/proprietary/xbin,system/xbin)

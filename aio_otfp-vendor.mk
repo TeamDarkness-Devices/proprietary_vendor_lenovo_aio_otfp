@@ -1,13 +1,8 @@
-# Live wallpaper packages
+# Extra packages
 PRODUCT_PACKAGES := \
     LiveWallpapers \
     LiveWallpapersPicker \
-    librs_jni
-
-#Priv-Apps
-PRODUCT_PACKAGES += \
-    K3 \
-    KAdiutor
+    librs_jni \
 
 # Publish that we support the live wallpaper feature.
 PRODUCT_COPY_FILES := \
@@ -17,3 +12,7 @@ PRODUCT_COPY_FILES := \
 DEVICE_PACKAGE_OVERLAYS := vendor/lenovo/aio_otfp/overlay
 
 $(call inherit-product, vendor/lenovo/aio_otfp/aio_otfp-vendor-blobs.mk)
+
+PRODUCT_PACKAGES := \
+    K3 \
+    KAdiutor

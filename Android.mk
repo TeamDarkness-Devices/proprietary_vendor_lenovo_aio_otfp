@@ -41,25 +41,25 @@ LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := Lenovo K3 Note
+LOCAL_MODULE := K3
+LOCAL_MODULE_OWNER := Pixlernblitz
+LOCAL_SRC_FILES := proprietary/priv-app/K3/K3.apk
+LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_BUILT_MODULE_STEM := package.apk
-# Make sure the build system doesn't try to resign the APK
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_DEX_PREOPT := false
-LOCAL_SRC_FILES := proprietary/priv-app/K3/K3.apk
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := KAdiutor
+LOCAL_MODULE_OWNER := PixlernBlitz
+LOCAL_SRC_FILES := proprietary/priv-app/KAdiutor/KAdiutor.apk
+LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_BUILT_MODULE_STEM := package.apk
-# Make sure the build system doesn't try to resign the APK
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_DEX_PREOPT := false
-LOCAL_SRC_FILES := proprietary/priv-app/KAdiutor/KAdiutor.apk
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 endif
